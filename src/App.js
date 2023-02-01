@@ -5,7 +5,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import { Contacts } from './components/Contacts';
 import { About } from './About';
-import { Register } from './components/Register';
+import Register from './components/Register';
 import { Events } from './components/Events';
 
 
@@ -21,13 +21,13 @@ const App = () => {
                   <li><Link to ="/contacts">Contacts</Link></li>
                   <li><Link to ="/register">Register</Link></li>
               </ul>
-          </nav>
+          </nav> 
       <Routes>
         <Route path = '/' element={<Home />} />
         <Route path = 'events' element = {<Events />} />
         <Route path = 'about' element = {<About />} />
         <Route path='contacts' element = {<Contacts />} />
-        <Route path='register' element = {<Register/>} />
+        <Route path='register' element = {<Register />} />
       </Routes>
       </>
   );

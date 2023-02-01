@@ -5,7 +5,7 @@ import {
     BrowserRouter as Router,
     Routes,
   } from "react-router-dom";
-
+ 
 const NavigationBar = () => {
   return (
       <div style={{ background: 'transparent' }}>
