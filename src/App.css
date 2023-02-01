@@ -2,11 +2,21 @@
 * {
   background: rgb(18, 9, 9);
   color: white;
-
 }
+
+@font-face {
+  font-family: lightning;
+  src: url(./Lightningvolt-xoqm.ttf);
+}
+
+.home-container p {
+  font-family: lightning;
+  font-size: 31px;
+}
+
 .nav-container {
   background: transparent;
-  display: flex;
+  display: flex; 
   justify-content: center;
 }
 
@@ -15,6 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: lightning;
 }
 
 nav ul {
@@ -73,7 +84,7 @@ nav ul li a:hover {
 .oontz {
   height: 500px;
   position: relative;
-  left: 35%;
+  left: 38%;
 }
 
 /* register form */
@@ -88,6 +99,8 @@ form {
   position: relative;
   left: 35%;
   top: 40px;
+  font-family: lightning;
+  font-size: 30px;
 }
 
 label, input, button {
