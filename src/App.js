@@ -3,8 +3,8 @@ import React from 'react';
 import logo from '../src/logo.png';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import { Contacts } from './components/Contacts';
-import { About } from './About';
+import Contacts from './components/Contacts';
+import About from './components/About';
 import Register from './components/Register';
 import Events from './components/Events';
 

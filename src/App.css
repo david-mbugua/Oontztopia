@@ -176,3 +176,35 @@ button {
   position: relative;
   left: 55px;
 }
+
+/* About page */
+
+.aboutMain {
+  background-image: url(./components/images/backgroung.jpg);
+}
+
+.aboutDiv {
+  text-align: center;
+}
+
+.aboutDiv h1 {
+  font-family: lightning;
+  font-size: 60px;
+}
+
+.aboutDiv h3 {
+  font-family: "Quicksand";
+  font-size: 24px;
+}
+
+.aboutDiv p {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Contacts page */
+
+.logoContacts {
+  height: 300px;
+}

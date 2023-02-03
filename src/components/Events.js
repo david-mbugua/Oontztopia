@@ -1,6 +1,6 @@
 import React from "react";
 import party from './images/party.jpg'
-
+ 
 const Events = () => {
     const today = new Date();
     const year = today.getFullYear();
