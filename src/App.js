@@ -6,7 +6,7 @@ import Home from './components/Home';
 import { Contacts } from './components/Contacts';
 import { About } from './About';
 import Register from './components/Register';
-import { Events } from './components/Events';
+import Events from './components/Events';
 
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
                   <li><Link to ="/register">Register</Link></li>
               </ul>
           </nav> 
+
       <Routes>
         <Route path = '/' element={<Home />} />
         <Route path = 'events' element = {<Events />} />
@@ -29,7 +30,9 @@ const App = () => {
         <Route path='contacts' element = {<Contacts />} />
         <Route path='register' element = {<Register />} />
       </Routes>
+
       </>
+  
   );
 }
 

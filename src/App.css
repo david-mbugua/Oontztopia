@@ -1,17 +1,32 @@
+@font-face {
+  font-family: lightning;
+  src: url(./Lightningvolt-xoqm.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 /* NavigationBar.css */
 * {
   background: rgb(18, 9, 9);
   color: white;
 }
 
-@font-face {
+.engaging{
   font-family: lightning;
-  src: url(./Lightningvolt-xoqm.ttf);
+  font-size: 40px;
+  text-align: center;
 }
 
-.home-container p {
+.description {
+  font-family: "Quicksand";
+  text-align: center;
+  font-size: 18px;
+}
+
+.home-container h1 {
   font-family: lightning;
-  font-size: 31px;
+  text-align: center;
+  font-size: 70px;
 }
 
 .nav-container {
@@ -38,7 +53,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 1rem;
 }
 
@@ -85,6 +100,11 @@ nav ul li a:hover {
   height: 500px;
   position: relative;
   left: 38%;
+} 
+
+.Footer {
+  text-align: center;
+  margin-top: 60px;
 }
 
 /* register form */
@@ -113,9 +133,46 @@ input {
 }
 
 button {
-  background-color: green;
-  color: white;
+  background-color: rgb(166, 202, 7);
+  color: black;
+  font-weight: bolder;
+  font-size: 13px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+}
+
+/* Events page */
+
+.events-container h1{
+  font-family: lightning;
+  font-size: 70px;
+  text-align: center;
+}
+
+.event-content{
+  background-color: rgb(23, 22, 22);
+  padding-left: 15px;
+}
+
+.event-content h2{
+  background-color: rgb(23, 22, 22);
+  text-align: center;
+  font-family: lightning;
+  font-size: 40px;
+}
+
+.event-content p {
+  background-color: rgb(23, 22, 22);
+  font-family: "Quicksand";
+}
+
+.party {
+  height: 100%;
+  width: 100%;
+}
+
+.event-detail {
+  position: relative;
+  left: 55px;
 }
