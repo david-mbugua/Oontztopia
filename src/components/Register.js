@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import firebase from 'firebase/app';
+import 'firebase/database';
+
 
 const Register = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    password: '',
-    passwordConfirmation: ''
+    number: ''
   }); 
 
   const handleChange = event => {
@@ -17,10 +19,20 @@ const Register = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    console.log(formData);
+    const database = firebase.database();
+    database.ref('users').push({
+      name: formData.name,
+      email: formData.email,
+      number: formData.number
+    });
   };
 
   return (
+    <div className='registerDiv'>
+      <div className='registerHead'>
+        <h1>Register</h1>
+        <p>For Oontztopia news & updates</p>
+      </div>
     <form onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
       <input
@@ -42,28 +54,19 @@ const Register = () => {
         required
       />
 
-      <label htmlFor="password">Password:</label>
+      <label htmlFor="number">Phone Number:</label>
       <input
-        type="password"
-        id="password"
-        name="password"
-        value={formData.password}
+        type="number"
+        id="number"
+        name="number"
+        value={formData.number}
         onChange={handleChange}
         required
       />
 
-      <label htmlFor="passwordConfirmation">Password Confirmation:</label>
-      <input
-        type="password"
-        id="passwordConfirmation"
-        name="passwordConfirmation"
-        value={formData.passwordConfirmation}
-        onChange={handleChange}
-        required
-      />
-
-      <button type="submit">Register</button>
+      <button type="submit">Join</button>
     </form>
+    </div>
   );
 };
 

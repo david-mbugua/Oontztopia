@@ -7,7 +7,7 @@
 
 /* NavigationBar.css */
 * {
-  background: rgb(18, 9, 9);
+  background: rgb(0, 0, 0);
   color: white;
 }
 
@@ -112,12 +112,12 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 7px;
   border: 2px solid rgb(255, 250, 250);
   width: 300px;
   border-radius: 10px;
   position: relative;
-  left: 35%;
+  left: 40%;
   top: 40px;
   font-family: lightning;
   font-size: 30px;
@@ -138,8 +138,18 @@ button {
   font-weight: bolder;
   font-size: 13px;
   padding: 10px 20px;
-  border: none;
+  border: blue;
   border-radius: 5px;
+}
+
+.registerHead {
+  text-align: center;
+}
+
+.registerHead h1{
+  font-family: lightning;
+  font-size: 50px;
+  position: relative;
 }
 
 /* Events page */
@@ -207,4 +217,26 @@ button {
 
 .logoContacts {
   height: 300px;
+}
+
+.mainContacts {
+  position: relative;
+  left: 25%;
+  top: 90px;
+  background-color: gray;
+}
+
+.contactSection {
+  background-color: rgb(24, 18, 18);
+  padding-left: 25px;
+}
+
+.contactSection p{
+  background-color: rgb(24, 18, 18);
+}
+
+.contactSection h1 {
+  background-color: rgb(24, 18, 18);
+  font-family: lightning;
+  font-size: 50px;
 }
