@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import firebase from "firebase/app";
+//import firebase from "firebase/app";
 import "firebase/database";
 import "firebase/auth";
 
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCYRq3_JmxMsN_g8JdQzlxtpZOUi8x92fw",
-  authDomain: "oontztopia-c57e6.firebaseapp.com",
-  projectId: "oontztopia-c57e6",
-  storageBucket: "oontztopia-c57e6.appspot.com",
-  messagingSenderId: "1073014387929",
-  appId: "1:1073014387929:web:6dc0b72b954accb3ea7ac8",
-  measurementId: "G-R6N8VFBNWQ"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCYRq3_JmxMsN_g8JdQzlxtpZOUi8x92fw",
+//   authDomain: "oontztopia-c57e6.firebaseapp.com",
+//   projectId: "oontztopia-c57e6",
+//   storageBucket: "oontztopia-c57e6.appspot.com",
+//   messagingSenderId: "1073014387929",
+//   appId: "1:1073014387929:web:6dc0b72b954accb3ea7ac8",
+//   measurementId: "G-R6N8VFBNWQ"
+// };
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
 
 const Register = () => {
@@ -33,21 +33,20 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
-    firebase
-      .database()
-      .ref("users")
-      .push({
-        name: formData.name,
-        email: formData.email,
-        number: formData.number
-      })
-      .then(() => {
-        console.log("Data saved successfully");
-      })
-      .catch((error) => {
-        console.error("Error saving data: ", error);
-      });
+    // firebase
+    //   .database()
+    //   .ref("users")
+    //   .push({
+    //     name: formData.name,
+    //     email: formData.email,
+    //     number: formData.number
+    //   })
+    //   .then(() => {
+    //     console.log("Data saved successfully");
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error saving data: ", error);
+    //   });
   };
   
 
