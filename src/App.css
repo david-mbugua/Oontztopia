@@ -3,7 +3,7 @@
   src: url(./Lightningvolt-xoqm.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* NavigationBar.css */
 * {
@@ -11,7 +11,7 @@
   color: white;
 }
 
-.engaging{
+.engaging {
   font-family: lightning;
   font-size: 40px;
   text-align: center;
@@ -31,7 +31,7 @@
 
 .nav-container {
   background: transparent;
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 
@@ -85,13 +85,13 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 767px) {
   .nav-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-container a {
-      margin-right: 0;
-      margin-bottom: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -100,7 +100,7 @@ nav ul li a:hover {
   height: 500px;
   position: relative;
   left: 38%;
-} 
+}
 
 .Footer {
   text-align: center;
@@ -123,7 +123,9 @@ form {
   font-size: 30px;
 }
 
-label, input, button {
+label,
+input,
+button {
   margin: 10px;
   border-radius: 10px;
 }
@@ -146,7 +148,7 @@ button {
   text-align: center;
 }
 
-.registerHead h1{
+.registerHead h1 {
   font-family: lightning;
   font-size: 50px;
   position: relative;
@@ -154,18 +156,18 @@ button {
 
 /* Events page */
 
-.events-container h1{
+.events-container h1 {
   font-family: lightning;
   font-size: 70px;
   text-align: center;
 }
 
-.event-content{
+.event-content {
   background-color: rgb(23, 22, 22);
   padding-left: 15px;
 }
 
-.event-content h2{
+.event-content h2 {
   background-color: rgb(23, 22, 22);
   text-align: center;
   font-family: lightning;
@@ -231,7 +233,7 @@ button {
   padding-left: 25px;
 }
 
-.contactSection p{
+.contactSection p {
   background-color: rgb(24, 18, 18);
 }
 
